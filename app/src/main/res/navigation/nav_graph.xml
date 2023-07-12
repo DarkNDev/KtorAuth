@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/authenticationFragment">
+
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="com.darkndev.ktorauth.ui.auth.AuthenticationFragment"
+        android:label="Authentication" >
+        <action
+            android:id="@+id/action_authenticationFragment_to_contentFragment"
+            app:destination="@id/contentFragment"
+            app:popUpTo="@id/authenticationFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.darkndev.ktorauth.ui.content.ContentFragment"
+        android:label="{user_id}" >
+        <argument
+            android:name="user_id"
+            app:argType="string" />
+    </fragment>
+</navigation>
