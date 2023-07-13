@@ -11,6 +11,15 @@ https://github.com/DarkNDev/KtorAuth/assets/49820671/6a7b06dc-dd65-42b9-8f22-a18
 
 
 ### Libraries Used
-Material 3, Navigation Component, Kotlin coroutines, Jetpack Datastore, Lifecycle (ViewModel + LiveData), Dagger Hilt, Ktor Client with okhttp, Content Negotiation, Kotlin serilization and Client Logging.
+1. Material 3
+2. Navigation Component
+3. Kotlin coroutines
+4. Jetpack Datastore
+5. Lifecycle (ViewModel + LiveData)
+6. Dagger Hilt
+7. Ktor Client with okhttp
+8. Content Negotiation
+9. Kotlin serilization
+10. Client Logging.
 ### Links
 Server for usage [com.darkndev.ktor-auth](https://github.com/DarkNDev/com.darkndev.ktor-auth)
